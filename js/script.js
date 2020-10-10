@@ -6,7 +6,7 @@ let answer = prompt(test);
 if (3 * answer == 6) {
 	console.log('yes')
 }
-else {
+else { 
 	console.log('no no no')
 } */
 alert('Давай проверим как ты умеешь умножать числа');
@@ -23,7 +23,7 @@ if (answer == userAnswer) {
 	if (nextStep == true) {
 		alert('правильный ответ' + answer)
 	} else {
-		alert('ну и иди ннахер')
+		alert('чтобы попробовать еще раз обновите страницу')
 	}
 };
 
