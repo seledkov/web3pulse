@@ -12,5 +12,18 @@ $(document).ready(function () {
 			.closest('div.container').find('div.catalog__contents').removeClass('catalog__contents_active').eq($(this).index()).addClass('catalog__contents_active');
 	});
 
-	$
+
+
+	function toggleSlide(item) {
+		$(item).each(function (i) {
+			$(this).on('click', function (e) {
+				e.preventDefault();
+				$('.card__content').eq(i).toggleClass('card__content_active');
+				$('.card__list').eq(i).toggleClass('card__list_active');
+			})
+		});
+	};
+
+	toggleSlide('.card__changeDescr');
+	toggleSlide('.card__back');
 });
